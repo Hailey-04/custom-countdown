@@ -158,6 +158,13 @@ color: rgb(93, 58, 190);
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
+
+  body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  }
+  
+  
   .video-background {
     width: 100vw;
     height: 100vh;
