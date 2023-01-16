@@ -175,6 +175,10 @@ color: rgb(93, 58, 190);
     object-position: 70%;
     margin-top: -1px;
   }
+  
+  .video-overlay {
+    position: inherit;
+  }
 
   .container {
     min-width: unset;
