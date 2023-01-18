@@ -14,8 +14,8 @@ body {
   font-family: Nunito, sans-serif;
 }
 
-/* Video Background */
-.video-background {
+/* Image Background */
+/* .img-background {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -23,21 +23,21 @@ body {
   width: 100vw;
 }
 
-video {
+img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
-.video-overlay {
+/* .img-overlay {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.35);
-}
+} */
 
 /* Container */
 .container {
@@ -50,7 +50,7 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .input-container {
@@ -158,27 +158,20 @@ color: rgb(93, 58, 190);
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
-
-  body {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  }
-  
-  
-  .video-background {
+  /* .img-background {
     width: 100vw;
     height: 100vh;
   }
 
-  video {
+  img {
     object-fit: cover;
     object-position: 70%;
     margin-top: -1px;
-  }
-  
-  .video-overlay {
+  } */
+
+  /* .video-overlay{
     position: inherit;
-  }
+  } */
 
   .container {
     min-width: unset;
@@ -190,6 +183,8 @@ color: rgb(93, 58, 190);
 
   .input-container {
     top: unset;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .countdown {
